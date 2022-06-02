@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main: the function is ment to print the put function
- *
+ * main - the function is ment to print the put function
  *
  * Retun: 0
  */
