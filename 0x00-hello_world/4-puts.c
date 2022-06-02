@@ -6,7 +6,6 @@
  * decription: from the main function, the code will have to-
  * print "Programming is like buliding a multilingua puzzle"
  * retun: 0
- *
  */
 int main(void)
 {
