@@ -2,7 +2,7 @@
 /**
  * main - the function is ment to print the put function
  *
- * Retun: Always (0) Success
+ * Return: Always (0) Success
  */
 int main(void)
 {
