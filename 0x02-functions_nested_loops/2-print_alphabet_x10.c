@@ -3,7 +3,6 @@
 
 /**
  * print_alphabet_x10 - this print alpha in lowercase
- *
  * Return: void
  */
 
