@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
-  * _is_lower - it helps check for the lower cases in a string
+  * _islower - it helps check for the lower cases in a string
+  * @c: this check for the character
   * Return: if it is lower case, otherwise 0
   */
 int _islower(int c)
