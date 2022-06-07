@@ -1,14 +1,22 @@
-#include <stdio>
-/* main - this function will print _putchar
+#include <stdio.h>
+#include "main.h"
+
+/** main - this function will print _putchar
  *
- * Description - Return 0 (Success)
+ * Description: - Return 0 (Success)
  */
-void put(void)
-{
-	printf("_putchar\n");
-}
+
 int main(void)
 {
-	put();
-	return (0);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
+	return(0);
 }
