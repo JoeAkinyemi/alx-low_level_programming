@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * times_table - print multiplication table
-  * Description: prints the 9 times table from 0
-  * following the col&row table format
-  */
+ * times_table - print multiplication table
+ * Description: prints the 9 times table from 0
+ * following the col&row table format
+ */
 
 void times_table(void)
 {
