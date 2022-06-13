@@ -80,11 +80,11 @@ void print_array(int *a, int n);
  */
 
 char *_strcpy(char *dest, char *src);
-OB
+
 /**
-OB * _atoi - convert string to int
-OB * @s: string to convert
-OB * Return: integer
+ * _atoi - convert string to int
+ * @s: string to convert
+ * Return: integer
  */
-OBOB
-OBint _atoi(char *s);
+
+int _atoi(char *s);
