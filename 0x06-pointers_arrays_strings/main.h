@@ -85,6 +85,11 @@ char *leet(char *s);
  * Return: encoded string
  */
 
+void print_number(int n);
+/**
+  *print number
+  */
+
 char *rot13(char *s);
 
 /**
