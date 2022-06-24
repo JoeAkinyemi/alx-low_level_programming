@@ -4,8 +4,8 @@
 
 /**
  * main - print product of argument numbers
- * argc: argument counter
- * argv: numbers to multiply
+ * @argc: argument counter
+ * @argv: numbers to multiply
  *
  * Return: 0 on success, 1 if two argument not provided
  *

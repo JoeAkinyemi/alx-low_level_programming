@@ -4,7 +4,7 @@
 
 /**
  * is_num - check if argv args is a number
- * argvv: a argv
+ * @argvv: a argv
  * Return: true only if string is a number, false if not
  *
  */
@@ -23,8 +23,8 @@ bool is_num(char *argvv)
 
 /**
  * main - print sum if all arguments given are numbers
- * argc: argument counter
- * argv: arguments
+ * @argc: argument counter
+ * @argv: arguments
  *
  * Return: 0 on success, 1 if an argument wasn't a number
  */
