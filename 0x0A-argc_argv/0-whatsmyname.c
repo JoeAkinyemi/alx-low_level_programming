@@ -3,8 +3,8 @@
 
 /**
  * main - print name of program
- * argc: argument counter
- * argv: pointer to string array of arguments
+ * @argc: argument counter
+ * @argv: pointer to string array of arguments
  *
  * Return: 0 on success
  */
@@ -16,3 +16,5 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
+
