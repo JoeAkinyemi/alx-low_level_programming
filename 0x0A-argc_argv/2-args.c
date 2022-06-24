@@ -3,8 +3,8 @@
 
 /**
  * main - print each argument passed to program on a line.
- * argc: argument counter.
- * argv: pointer to string array of arguments.
+ * @argc: argument counter.
+ * @argv: pointer to string array of arguments.
  *
  * Return: 0 on success.
  *
