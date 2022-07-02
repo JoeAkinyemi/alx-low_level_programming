@@ -1,42 +1,37 @@
 #include "main.h"
 
 /**
- * times_table - print multiplication table
- * Description: prints the 9 times table from 0
- * following the col&row table format
+ * times_table - prints the 9 times table, starting with 0
  */
 
 void times_table(void)
 {
-	int row;
-	int column;
-	int result;
+	int x, y, z;
 
-	for (row = 0; row <= 9; row++)
+	for (x = 0; x < 10; x++)
 	{
-		for (column = 0; column <= 9; column++)
+		for (y = 0; y < 10; y++)
 		{
-			result = (row * column);
-
-			if (column == 0)
+			z = x * y;
+			if (y == 0)
 			{
-				_putchar('0' + result);
+				_putchar(z + '0');
 			}
-			else
+			if (z < 10 && y != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (result <= 9)
-				{
-					_putchar(' ');
-					_putchar('0' + result);
-				}
-				if (result > 9)/* since _putchar print only single character*/
-				{
-					_putchar('0' + (result / 10)); /* to get the first digit*/
-					_putchar('0' + (result % 10)); /* to get the last digit*/
-				}
+				_putchar(' ');
+				_putchar(z + '0');
+			}
+			else if (z >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((z / 10) + '0');
+				_putchar((z % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
