@@ -1,38 +1,40 @@
 #include <stdio.h>
+
 /**
-  *main - Entry point
-  *Description: Print all possible combos of two-digit numbers
-  *from 00-99 e.g. 00 01, 00 02, 00 03, 00 04 but no repeats
-  *Return: Always return 0
-  */
+ * main - main block
+ * Description: Print all possible combinations of two two-digit numbers.
+ * Numbers should range from 0 to 99.
+ * The two numbers should be separated by a space.
+ * All numbers should be printed with two digits. 1 should be printed as 01.
+ * Combination of numbers must be separated by a comma followed by a space.
+ * Combinations of numbers should be printed in ascending order.
+ * `00 01` and `01 00` are considered as the same combination.
+ * You can only use `putchar` to print to console.
+ * You can only use `putchar` up to 8 times.
+ * You are not allowed to use any variable of type `char`.
+ * Return: 0
+ */
+
 int main(void)
 {
-	int tens;
-	int unit;
-	int t;
-	int u;
+	int x, y;
 
-	for (tens = '0'; tens <= '9'; tens++) /* printing the first pair */
+	for (x = 0; x < 100; x++)
 	{
-		for (unit = '0'; unit <= '9'; unit++)
+		for (y = 0; y < 100; y++)
 		{
-			for (t = tens; t <= '9'; t++)/* printing the second pair */
+			if (x < y)
 			{
-				for (u = unit + 1; u <= '9'; u++)
+				putchar((x / 10) + 48);
+				putchar((x % 10) + 48);
+				putchar(' ');
+				putchar((y / 10) + 48);
+				putchar((y % 10) + 48);
+				if (x != 98 || y != 99)
 				{
-					putchar(tens);
-					putchar(unit);
+					putchar(',');
 					putchar(' ');
-					putchar(t);
-					putchar(u);
-
-					if (!((tens == '9' && unit == '8') && (t == '9' && u == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
-				u = '0';
 			}
 		}
 	}
