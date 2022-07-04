@@ -1,43 +1,50 @@
 #include <stdio.h>
-
 /**
- * main - main block
- * Description: Print all possible combinations of two two-digit numbers.
- * Numbers should range from 0 to 99.
- * The two numbers should be separated by a space.
- * All numbers should be printed with two digits. 1 should be printed as 01.
- * Combination of numbers must be separated by a comma followed by a space.
- * Combinations of numbers should be printed in ascending order.
- * `00 01` and `01 00` are considered as the same combination.
- * You can only use `putchar` to print to console.
- * You can only use `putchar` up to 8 times.
- * You are not allowed to use any variable of type `char`.
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success/correct)
  */
-
 int main(void)
-{
-	int x, y;
 
-	for (x = 0; x < 100; x++)
-	{
-		for (y = 0; y < 100; y++)
-		{
-			if (x < y)
-			{
-				putchar((x / 10) + 48);
-				putchar((x % 10) + 48);
-				putchar(' ');
-				putchar((y / 10) + 48);
-				putchar((y % 10) + 48);
-				if (x != 98 || y != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+
+
+{
+int first_nums;
+int second_nums;
+
+
+for (first_nums = 0; first_nums < 100 ; first_nums++)
+{
+for (second_nums = first_nums + 1 ; second_nums < 100; second_nums++)
+{
+
+putchar (first_nums / 10 + '0');
+putchar (first_nums % 10 + '0');
+
+
+putchar (' ');
+
+putchar (second_nums / 10 + '0');
+putchar (second_nums % 10 + '0');
+
+
+if (first_nums == 98 && second_nums == 99)
+{
+break;
+}
+
+
+putchar(',');
+putchar (' ');
+
+
+}
+
+}
+
+putchar('\n');
+
+
+return (0);
+
 }
